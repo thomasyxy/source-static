@@ -1,0 +1,20 @@
+{
+  "name": "le-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@182.254.146.59:LFT/le-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "koa": "^2.2.0",
+    "koa-router": "^7.1.1",
+    "koa-static-cache": "^5.0.0"
+  }
+}
