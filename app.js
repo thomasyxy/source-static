@@ -9,7 +9,7 @@ const port = 7002
 
 //静态资源文件
 app.use(staticCache(path.join(__dirname, 'public'), {
-  maxAge: 0
+  maxAge: 10000
 }))
 
 //路由
