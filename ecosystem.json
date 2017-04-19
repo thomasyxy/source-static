@@ -1,0 +1,24 @@
+{
+  "apps" : [
+    {
+      "name"      : "static",
+      "script"    : "app.js",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_production" : {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy" : {
+    "production" : {
+      "user" : "root",
+      "host" : "114.215.158.62",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:thomasyxy/source-static.git",
+      "path" : "/node/source-static",
+      "post-deploy" : "bash /node/source-static/current/deploy.sh"
+    }
+  }
+}
